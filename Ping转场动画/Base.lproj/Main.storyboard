@@ -1,25 +1,138 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dI7-7Y-oac">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Ping转场动画" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS是由苹果公司开发的移动操作系统" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRk-mp-fel">
+                                <rect key="frame" x="19" y="229" width="283" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91L-Fo-GQn">
+                                <rect key="frame" x="16" y="420" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6iS-5p-vmR"/>
+                                    <constraint firstAttribute="width" constant="44" id="mu6-2C-ltv"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AiK-ex-P9o"/>
+                                    <segue destination="jYw-FZ-FOn" kind="show" identifier="PushSegue" id="4Tt-Rr-f8s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.38039215686274508" green="1" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="91L-Fo-GQn" secondAttribute="bottom" constant="16" id="Ccc-lx-J0Y"/>
+                            <constraint firstAttribute="centerY" secondItem="SRk-mp-fel" secondAttribute="centerY" constant="0.5" id="JJW-Cg-1QH"/>
+                            <constraint firstAttribute="centerX" secondItem="SRk-mp-fel" secondAttribute="centerX" id="lq0-xy-WWQ"/>
+                            <constraint firstItem="91L-Fo-GQn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="qi0-Ta-m3G"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="usF-2F-lBv"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="button" destination="91L-Fo-GQn" id="Qar-tI-V1l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Sec View Controller-->
+        <scene sceneID="8wi-H8-efn">
+            <objects>
+                <viewController id="jYw-FZ-FOn" customClass="SecViewController" customModule="Ping转场动画" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nAh-uC-Nii"/>
+                        <viewControllerLayoutGuide type="bottom" id="tVr-0F-J3h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ubB-oH-95O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原本这个系统名为iPhone OS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzP-FE-xxV">
+                                <rect key="frame" x="51" y="229" width="218" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sx2-jc-3e2">
+                                <rect key="frame" x="16" y="420" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="8O9-Zv-lPZ"/>
+                                    <constraint firstAttribute="height" constant="44" id="s41-L6-KaK"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pop:" destination="jYw-FZ-FOn" eventType="touchUpInside" id="rU7-Te-hSq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.17647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="BzP-FE-xxV" secondAttribute="centerY" constant="0.5" id="7Sl-sr-N6U"/>
+                            <constraint firstItem="tVr-0F-J3h" firstAttribute="top" secondItem="sx2-jc-3e2" secondAttribute="bottom" constant="16" id="7er-ES-rnO"/>
+                            <constraint firstAttribute="centerX" secondItem="BzP-FE-xxV" secondAttribute="centerX" id="XNN-OO-iTR"/>
+                            <constraint firstItem="sx2-jc-3e2" firstAttribute="leading" secondItem="ubB-oH-95O" secondAttribute="leading" constant="16" id="Xcj-NI-7nv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="sx2-jc-3e2" id="8vR-qg-2FP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="48s-Uc-AnR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="711" y="404"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OcA-Xi-W1i">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="dI7-7Y-oac" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x5x-X1-gbO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <outlet property="delegate" destination="Llw-eC-SEw" id="Uz7-3w-fW2"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="dzq-C2-Eik"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n8z-pq-tpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Llw-eC-SEw" customClass="NavigationControllerDelegate" customModule="Ping转场动画" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="-109" y="418"/>
         </scene>
     </scenes>
 </document>

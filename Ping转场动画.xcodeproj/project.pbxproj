@@ -13,6 +13,9 @@
 		1E023E9F1B5CBB2100C45D88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E023E9E1B5CBB2100C45D88 /* Images.xcassets */; };
 		1E023EA21B5CBB2100C45D88 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E023EA01B5CBB2100C45D88 /* LaunchScreen.xib */; };
 		1E023EAE1B5CBB2100C45D88 /* Ping____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E023EAD1B5CBB2100C45D88 /* Ping____Tests.swift */; };
+		1E023EB81B5CBE9F00C45D88 /* SecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E023EB71B5CBE9F00C45D88 /* SecViewController.swift */; };
+		1E023EBA1B5CC05800C45D88 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E023EB91B5CC05800C45D88 /* NavigationControllerDelegate.swift */; };
+		1E023EBC1B5CC1BA00C45D88 /* AnimationTrasition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E023EBB1B5CC1BA00C45D88 /* AnimationTrasition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		1E023EA71B5CBB2100C45D88 /* Ping转场动画Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ping转场动画Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E023EAC1B5CBB2100C45D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E023EAD1B5CBB2100C45D88 /* Ping____Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ping____Tests.swift"; sourceTree = "<group>"; };
+		1E023EB71B5CBE9F00C45D88 /* SecViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecViewController.swift; sourceTree = "<group>"; };
+		1E023EB91B5CC05800C45D88 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		1E023EBB1B5CC1BA00C45D88 /* AnimationTrasition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTrasition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,9 @@
 			children = (
 				1E023E971B5CBB2000C45D88 /* AppDelegate.swift */,
 				1E023E991B5CBB2000C45D88 /* ViewController.swift */,
+				1E023EB71B5CBE9F00C45D88 /* SecViewController.swift */,
+				1E023EB91B5CC05800C45D88 /* NavigationControllerDelegate.swift */,
+				1E023EBB1B5CC1BA00C45D88 /* AnimationTrasition.swift */,
 				1E023E9B1B5CBB2000C45D88 /* Main.storyboard */,
 				1E023E9E1B5CBB2100C45D88 /* Images.xcassets */,
 				1E023EA01B5CBB2100C45D88 /* LaunchScreen.xib */,
@@ -212,8 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E023EBA1B5CC05800C45D88 /* NavigationControllerDelegate.swift in Sources */,
 				1E023E9A1B5CBB2000C45D88 /* ViewController.swift in Sources */,
 				1E023E981B5CBB2000C45D88 /* AppDelegate.swift in Sources */,
+				1E023EBC1B5CC1BA00C45D88 /* AnimationTrasition.swift in Sources */,
+				1E023EB81B5CBE9F00C45D88 /* SecViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
